@@ -16,30 +16,6 @@ contract Sample{
     }
 
 
-    
-    
-    
-
-    function getBalance() public view returns(uint){
-        return tokens;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 

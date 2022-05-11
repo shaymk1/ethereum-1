@@ -5,20 +5,20 @@ pragma solidity ^0.8.0;
 
 contract Sample{
 
-    address public owner;
-    uint public tokens;
+    int sum;
 
-    uint[] public noOfPeople;
+    function Sum(int _a, int _b)public{
+        sum = _a + _b;
+    } 
 
-    constructor(uint _tokens ) {
-        owner = msg.sender;
-        tokens = _tokens;
+    function getSum() public view returns(int){
+        return sum;
     }
 
-    function giveTokens() public {
-        require(msg.sender == owner);
+
     
-    }
+    
+    
 
     function getBalance() public view returns(uint){
         return tokens;
